@@ -1,7 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
 layers:
   base:
-  - {t: TAB, h: Ctl+Sft+ LALT}
   - Q
   - W
   - E
@@ -12,8 +11,6 @@ layers:
   - I
   - O
   - P
-  - '-'
-  - LSHIFT
   - A
   - S
   - D
@@ -24,8 +21,6 @@ layers:
   - K
   - L
   - ;
-  - ''''
-  - LEFT CONTROL
   - Z
   - X
   - C
@@ -36,15 +31,13 @@ layers:
   - ','
   - .
   - /
-  - LEFT ALT
-  - LEFT GUI
+  - N
+  - {t: SPACE, h: symbols}
+  - {t: LSHIFT, h: LEFT GUI}
+  - {t: ENTER, h: Alt+ TAB}
+  - {t: BACKSPACE, h: LEFT CONTROL}
   - nav
-  - BSPC
-  - SPACE
-  - symbols
-  - ENTER
-  symbols:
-  - {t: ▽, type: trans}
+  nav:
   - '1'
   - '2'
   - '3'
@@ -55,8 +48,33 @@ layers:
   - '8'
   - '9'
   - '0'
+  - ''
+  - '&mkp LCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp RCLK'
+  - '&mwh SCROLL_UP'
+  - ''
+  - HOME
+  - UP
+  - END
+  - PG UP
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&mwh SCROLL_DOWN'
+  - '&teste'
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PG DN
+  - Advanced
   - {t: ▽, type: trans}
-  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  symbols:
   - '!'
   - '@'
   - '#'
@@ -67,69 +85,33 @@ layers:
   - '*'
   - (
   - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
-  - '~'
-  - '|'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - '-'
   - '='
-  - +
-  - '['
-  - ']'
   - '{'
   - '}'
   - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - _
+  - +
+  - '['
+  - ']'
+  - '|'
+  - symbols
   - {type: held}
   - {t: ▽, type: trans}
-  nav:
-  - Gui+Ctl+ TAB
-  - {t: ▽, type: trans}
-  - Gui+ [
-  - Sft+ TAB
-  - TAB
-  - Gui+ ]
-  - Alt+ LEFT
-  - Alt+ DOWN
-  - Alt+ UP
-  - Alt+ RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SCROLL DOWN
-  - SCROLL UP
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - Gui+ LEFT
-  - Gui+ DOWN
-  - Gui+ UP
   - Gui+ RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - Ctl+Gui+ SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  extended:
+  Advanced:
   - {t: ▽, type: trans}
   - F1
   - F2
@@ -160,24 +142,34 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
 combos:
-- p: [0, 38, 5]
-  k: BT CLR
-- p: [29, 28]
-  k: SPACE
-- p: [17, 16]
-  k: ENTER
-- p: [5, 6]
-  k: CLCK
+- p: [0, 1]
+  k: ESC
+- p: [10, 11]
+  k: TAB
+- p: [10, 20]
+  k: CAPSLOCK
+- p: [20, 21]
+  k: Ctl+ Z
+- p: [21, 22]
+  k: Ctl+ X
+- p: [22, 23]
+  k: Ctl+ C
+- p: [23, 24]
+  k: Ctl+ V
+- p: [20, 21, 22]
+  k: Ctl+ Y
+- p: [8, 9]
+  k: DELETE
+- p: [18, 19]
+  k: ''''
+- p: [17, 18]
+  k: '~'
+- p: [28, 29]
+  k: '?'
