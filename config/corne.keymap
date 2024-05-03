@@ -9,6 +9,11 @@
   // 21 backlight + 6 glowlight
 };
 
+/ {
+  chosen {
+    zmk,matrix_transform = &five_column_transform;
+  };
+};
 
 #define TAPPING_TERM 200
 
