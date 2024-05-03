@@ -49,20 +49,20 @@ layers:
   - '9'
   - '0'
   - ''
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - '&mkp RCLK'
-  - '&mwh SCROLL_UP'
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - HOME
   - UP
   - END
   - PG UP
   - ''
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&mwh SCROLL_DOWN'
+  - ''
+  - ''
+  - ''
+  - ''
   - '&teste'
   - LEFT
   - DOWN
