@@ -13,7 +13,7 @@
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 };
-
+#include <dt-bindings/zmk/outputs.h>
 #define TAPPING_TERM 200
 
 / {
