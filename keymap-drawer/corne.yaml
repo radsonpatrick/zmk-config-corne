@@ -62,7 +62,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - '&mwh SCROLL_DOWN'
+  - ''
   - '&teste'
   - LEFT
   - DOWN
