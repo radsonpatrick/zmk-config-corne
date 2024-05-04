@@ -1,9 +1,9 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
 layers:
   base:
-  - Q
-  - W
-  - E
+  - {t: Q, h: Sft+ Q}
+  - {t: W, h: Sft+ W}
+  - {t: E, h: Sft+ E}
   - R
   - T
   - Y
