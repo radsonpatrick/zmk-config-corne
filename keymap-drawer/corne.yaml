@@ -52,7 +52,7 @@ layers:
   - '&mkp LCLK'
   - '&mmv MOVE_UP'
   - '&mkp RCLK'
-  - '&mwh SCROLL_UP'
+  - ''
   - ''
   - HOME
   - UP
