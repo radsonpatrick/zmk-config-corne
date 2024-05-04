@@ -33,9 +33,9 @@ layers:
   - {t: /, h: Sft+ /}
   - ''
   - {t: SPACE, h: symbols}
-  - {t: LEFT GUI, h: LSHIFT}
+  - {t: LEFT GUI, h: LEFT CONTROL}
   - {t: ENTER, h: LEFT ALT}
-  - {t: BACKSPACE, h: LEFT CONTROL}
+  - {t: BACKSPACE, h: LSHIFT}
   - nav
   nav:
   - '1'
