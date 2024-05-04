@@ -32,6 +32,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        encoder_test: encoder_test {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENCODER_TEST";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {
