@@ -1,10 +1,3 @@
-&led_strip {
-    chain-length = <0>;
-
-    // chain-length = <27>;
-    // 21 backlight + 6 glowlight
-};
-
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 };
