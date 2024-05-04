@@ -8,8 +8,8 @@
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 };
-#include <behaviors.dtsi>
 
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
@@ -23,6 +23,15 @@
     *  - tap once to lock the host
     *  - tap twice to put the host to sleep
     */
+
+        as: as {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -104,20 +113,20 @@
         base_layer {
             label = "BASE";
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R        &kp T                  &kp Y              &kp U                       &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &kp F        &kp G                  &kp H              &kp J                       &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V        &kp B                  &kp N              &kp M                       &kp COMMA  &kp DOT  &kp FSLH
-                &kp N  &lt 2 SPACE  &mt LEFT_GUI LSHIFT    &mt LA(TAB) ENTER  &mt LEFT_CONTROL BACKSPACE  &mo 1
+  &as LS(Q) Q  &as LS(W) W  &as LS(E) E  &kp R        &kp T                  &kp Y              &kp U                       &kp I      &kp O    &kp P
+  &kp A        &kp S        &kp D        &kp F        &kp G                  &kp H              &kp J                       &kp K      &kp L    &kp SEMI
+  &kp Z        &kp X        &kp C        &kp V        &kp B                  &kp N              &kp M                       &kp COMMA  &kp DOT  &kp FSLH
+                            &kp N        &lt 2 SPACE  &mt LEFT_GUI LSHIFT    &mt LA(TAB) ENTER  &mt LEFT_CONTROL BACKSPACE  &mo 1
             >;
         };
 
         nav_layer {
             label = "NAV";
             bindings = <
-  &kp N1  &kp N2          &kp N3          &kp N4           &kp N5              &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
+  &kp N1  &kp N2          &kp N3          &kp N4           &kp N5            &kp N6  &kp N7    &kp N8    &kp N9     &kp N0
   &none   &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP      &none   &kp HOME  &kp UP    &kp END    &kp PG_UP
   &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &teste  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN
-                          &mo 3           &trans           &trans              &trans  &trans    &trans
+                          &mo 3           &trans           &trans            &trans  &trans    &trans
             >;
         };
 
