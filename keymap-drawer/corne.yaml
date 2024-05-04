@@ -48,17 +48,17 @@ layers:
   - '8'
   - '9'
   - '0'
-  - ''
+  - VOLUME UP
   - '&mkp LCLK'
   - '&mmv MOVE_UP'
   - '&mkp RCLK'
   - '&msc SCRL_UP'
-  - ''
+  - PLAY PAUSE
   - HOME
   - UP
   - END
   - PG UP
-  - ''
+  - {t: VOLUME DOWN, h: MUTE}
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
