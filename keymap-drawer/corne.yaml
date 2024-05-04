@@ -34,7 +34,7 @@ layers:
   - ''
   - {t: SPACE, h: symbols}
   - {t: LEFT GUI, h: LSHIFT}
-  - {t: ENTER, h: Alt+ TAB}
+  - {t: ENTER, h: LEFT ALT}
   - {t: BACKSPACE, h: LEFT CONTROL}
   - nav
   nav:
