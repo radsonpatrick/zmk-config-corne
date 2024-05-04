@@ -102,7 +102,7 @@
         teste: teste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(M) &kp A &kp I &kp O &kp AT &kp N3 &kp N2 &kp N6 &kp N1 &kp N5 &kp N9 &kp N4 &kp N8 &kp N7 &kp P &kp O &kp R &kp R &kp A &kp SPACE &kp N0 &kp N2>;
+            bindings = <&kp LS(M) &kp A &kp I &kp O &kp AT &kp N3 &kp N2 &kp N6 &kp N1 &kp N5 &kp N9 &kp N4 &kp N8 &kp N7>;
             label = "TESTE";
         };
     };
@@ -116,7 +116,7 @@
   &as LS(Q) Q  &as LS(W) W  &as LS(E) E  &as LS(R) R  &as LS(T) T            &as LS(Y) Y        &as LS(U) U                 &as LS(I) I          &as LS(O) O      &as LS(P) P
   &as LS(A) A  &as LS(S) S  &as LS(D) D  &as LS(F) F  &as LS(G) G            &as LS(H) H        &as LS(J) J                 &as LS(K) K          &as LS(L) L      &as LS(SEMICOLON) SEMICOLON
   &as LS(Z) Z  &as LS(X) X  &as LS(C) C  &as LS(V) V  &as LS(B) B            &as LS(N) N        &as LS(M) M                 &as LS(COMMA) COMMA  &as LS(DOT) DOT  &as LS(FSLH) FSLH
-                            &none        &lt 2 SPACE  &mt LEFT_GUI LSHIFT    &mt LA(TAB) ENTER  &mt LEFT_CONTROL BACKSPACE  &mo 1
+                            &none        &lt 2 SPACE  &mt LSHIFT LEFT_GUI    &mt LA(TAB) ENTER  &mt LEFT_CONTROL BACKSPACE  &mo 1
             >;
         };
 
