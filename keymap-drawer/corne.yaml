@@ -33,7 +33,7 @@ layers:
   - {t: /, h: Sft+ /}
   - ''
   - {t: SPACE, h: symbols}
-  - {t: LEFT GUI, h: LEFT CONTROL}
+  - {t: LEFT GUI, h: toggle}
   - {t: ENTER, h: LEFT ALT}
   - {t: BACKSPACE, h: LSHIFT}
   - nav
@@ -173,3 +173,5 @@ combos:
   k: '~'
 - p: [28, 29]
   k: '?'
+- p: [31, 32]
+  k: {t: LEFT CONTROL, h: toggle}
