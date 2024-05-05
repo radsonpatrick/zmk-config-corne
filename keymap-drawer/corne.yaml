@@ -33,7 +33,7 @@ layers:
   - {t: /, h: Sft+ /}
   - ''
   - {t: SPACE, h: symbols}
-  - {t: LEFT GUI, h: toggle}
+  - '&tp'
   - {t: ENTER, h: LEFT ALT}
   - {t: BACKSPACE, h: LSHIFT}
   - nav
