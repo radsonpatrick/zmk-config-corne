@@ -30,13 +30,6 @@
             flavor = "tap-preferred";
         };
 
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "NEW_BEHAVIOR";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
-
         tp: tp {
             compatible = "zmk,behavior-tap-dance";
             label = "TP";
