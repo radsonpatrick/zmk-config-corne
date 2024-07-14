@@ -39,13 +39,6 @@
             tapping-term-ms = <300>;
         };
 
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "NEW_BEHAVIOR";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp A>, <&kp B>;
-        };
-    };
 
     combos {
         compatible = "zmk,combos";
