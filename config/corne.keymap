@@ -39,7 +39,7 @@
             tapping-term-ms = <300>;
         };
 
-
+    };
     combos {
         compatible = "zmk,combos";
 
