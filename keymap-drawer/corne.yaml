@@ -37,7 +37,7 @@ layers:
   - {t: ., h: Sft+ .}
   - {t: /, h: Sft+ /}
   - '1'
-  - ''
+  - '1'
   - {t: SPACE, h: symbols}
   - '&tp'
   - {t: ENTER, h: LEFT ALT}
