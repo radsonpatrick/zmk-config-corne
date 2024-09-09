@@ -173,5 +173,3 @@ combos:
   k: '~'
 - p: [28, 29]
   k: '?'
-- p: [31, 32]
-  k: {t: LEFT CONTROL, h: toggle}
