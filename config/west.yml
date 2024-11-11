@@ -1,9 +1,7 @@
 manifest:
   remotes:
-    # - name: zmkfirmware
-    #   url-base: https://github.com/urob
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/urob
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
   projects:
@@ -11,7 +9,6 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-      
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
