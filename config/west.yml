@@ -4,18 +4,15 @@ manifest:
       url-base: https://github.com/urob
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
-    - name: radsonpatrick
-      url-base: https://github.com/radsonpatrick
+    - name: GarrettFaucher
+      url-base: https://github.com/GarrettFaucher
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-oled-adapter
-      remote: mctechnology17
-      revision: main
-    - name: zmk-dongle-display
-      remote: radsonpatrick
+    - name: zmk-dongle-display-091-oled
+      remote: GarrettFaucher
       revision: main
   self:
     path: config
