@@ -1,43 +1,43 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x5_3}
+layout: {zmk_keyboard: corne, layout_name: five_column_transform}
 layers:
-  base:
-  - {t: Q, h: Sft+ Q}
-  - {t: W, h: Sft+ W}
-  - {t: E, h: Sft+ E}
-  - {t: R, h: Sft+ R}
-  - {t: T, h: Sft+ T}
-  - {t: Y, h: Sft+ Y}
-  - {t: U, h: Sft+ U}
-  - {t: I, h: Sft+ I}
-  - {t: O, h: Sft+ O}
-  - {t: P, h: Sft+ P}
-  - {t: A, h: Sft+ A}
-  - {t: S, h: Sft+ S}
-  - {t: D, h: Sft+ D}
-  - {t: F, h: Sft+ F}
-  - {t: G, h: Sft+ G}
-  - {t: H, h: Sft+ H}
-  - {t: J, h: Sft+ J}
-  - {t: K, h: Sft+ K}
-  - {t: L, h: Sft+ L}
-  - {t: ;, h: Sft+ ;}
-  - {t: Z, h: Sft+ Z}
-  - {t: X, h: Sft+ X}
-  - {t: C, h: Sft+ C}
-  - {t: V, h: Sft+ V}
-  - {t: B, h: Sft+ B}
-  - {t: N, h: Sft+ N}
-  - {t: M, h: Sft+ M}
-  - {t: ',', h: 'Sft+ ,'}
-  - {t: ., h: Sft+ .}
-  - {t: /, h: Sft+ /}
+  BASE:
+  - {t: Q, h: Sft+Q}
+  - {t: W, h: Sft+W}
+  - {t: E, h: Sft+E}
+  - {t: R, h: Sft+R}
+  - {t: T, h: Sft+T}
+  - {t: Y, h: Sft+Y}
+  - {t: U, h: Sft+U}
+  - {t: I, h: Sft+I}
+  - {t: O, h: Sft+O}
+  - {t: P, h: Sft+P}
+  - {t: A, h: Sft+A}
+  - {t: S, h: Sft+S}
+  - {t: D, h: Sft+D}
+  - {t: F, h: Sft+F}
+  - {t: G, h: Sft+G}
+  - {t: H, h: Sft+H}
+  - {t: J, h: Sft+J}
+  - {t: K, h: Sft+K}
+  - {t: L, h: Sft+L}
+  - {t: ;, h: Sft+;}
+  - {t: Z, h: Sft+Z}
+  - {t: X, h: Sft+X}
+  - {t: C, h: Sft+C}
+  - {t: V, h: Sft+V}
+  - {t: B, h: Sft+B}
+  - {t: N, h: Sft+N}
+  - {t: M, h: Sft+M}
+  - {t: ',', h: 'Sft+,'}
+  - {t: ., h: Sft+.}
+  - {t: /, h: Sft+/}
   - ''
-  - {t: SPACE, h: symbols}
+  - {t: SPACE, h: SYMBOL}
   - '&tp'
   - {t: ENTER, h: LEFT ALT}
   - {t: BACKSPACE, h: LSHIFT}
-  - nav
-  nav:
+  - NAV
+  NAV:
   - '1'
   - '2'
   - '3'
@@ -69,12 +69,12 @@ layers:
   - RIGHT
   - PG DN
   - '&teste'
-  - Advanced
+  - ADVANCED
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  symbols:
+  SYMBOL:
   - '!'
   - '@'
   - '#'
@@ -108,10 +108,10 @@ layers:
   - ''
   - {type: held}
   - {t: ▽, type: trans}
-  - Gui+ RIGHT
+  - Gui+RIGHT
   - {t: ▽, type: trans}
-  - Advanced
-  Advanced:
+  - ADVANCED
+  ADVANCED:
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -148,6 +148,43 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  '4':
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - K
+  - L
+  - ;
+  - SPACE
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
   k: ESC
@@ -156,15 +193,15 @@ combos:
 - p: [10, 20]
   k: CAPSLOCK
 - p: [20, 21]
-  k: Ctl+ Z
+  k: Ctl+Z
 - p: [21, 22]
-  k: Ctl+ X
+  k: Ctl+X
 - p: [22, 23]
-  k: Ctl+ C
+  k: Ctl+C
 - p: [23, 24]
-  k: Ctl+ V
+  k: Ctl+V
 - p: [20, 21, 22]
-  k: Ctl+ Y
+  k: Ctl+Y
 - p: [8, 9]
   k: DELETE
 - p: [18, 19]
